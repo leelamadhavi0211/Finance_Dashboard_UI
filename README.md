@@ -79,7 +79,7 @@ Role can be switched using a dropdown for demonstration purposes.
 
 * HTML5
 * CSS3
-* JavaScript (Vanilla JS)
+* JavaScript
 * Chart.js (for data visualization)
 
 ---
@@ -161,5 +161,3 @@ This project demonstrates:
 * Role-based interface handling
 
 ---
-
-✨ Built as part of an internship assignment
