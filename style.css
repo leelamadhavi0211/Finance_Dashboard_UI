@@ -1,0 +1,120 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  background: #f4f6f9;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background: #2c3e50;
+  color: white;
+}
+
+section {
+  padding: 20px;
+}
+
+.cards {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.card {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.charts {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.chart-box {
+  flex: 1;
+  min-width: 300px;
+  height: 300px;   /* ⭐ THIS FIXES YOUR ISSUE */
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+canvas {
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.controls {
+  margin-bottom: 10px;
+}
+
+input, select {
+  padding: 8px;
+  margin-right: 10px;
+}
+
+table {
+  width: 100%;
+  background: white;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+#formContainer {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+button {
+  padding: 10px 15px;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#insights {
+  margin-top: 20px;
+}
+
+#insightContent {
+  font-size: 18px;
+  font-weight: 600;
+  color: #473ce7;  /* highlight color */
+  background: #f2fcfd;
+  padding: 10px 15px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+button:hover {
+  background: #2980b9;
+}
+
+@media (max-width: 768px) {
+  .cards, .charts {
+    flex-direction: column;
+  }
+}
